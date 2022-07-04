@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+
+
+/* modal */
+
+.rules{
+    display: flex;
+    flex-direction: column;
+}
+#modalRules:checked > .rules {
+    display: none;
+} 
+
+/* utilities */
+
+.none, .game__options, .game__result{
+    display: none;
+}
+.active{
+    display: flex;
+}

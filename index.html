@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="wrapper">
+    <!-- scoreCard interface -->
+    <header class="scoreCard">
+      <ul>
+        <li>rock</li><br/>
+        <li>paper</li><br/>
+        <li>scissors</li>
+      </ul>
+      <div class="score">
+        <p>Score</p>
+        <h1 id="Points">0</h1>
+
+      </div>
+    </header>
+    <!-- game interface -->
+    <section class="game">
+      <menu class="game__options active">
+        <li><button class="game__option" id="Paper">paper</button></li>
+        <li><button class="game__option" id="Scissor">scissor</button></li>
+        <li><button class="game__option" id="Rock">rock</button></li>
+      </menu>
+      <div class="game__result none">
+        <div class="you"></div>
+        <div class="house"></div>
+        <div class="result">
+          <h1 class="winner"></h1>
+          <button class="result__button">play again</button>
+        </div>
+      </div>
+    </section>
+    <!-- rules modal -->
+
+    <div class="rules none">
+      <div class="header">
+        <h2>RULES</h2>
+        <img src="images/icon-close.svg" alt="close">
+      </div>
+      <figure>
+        <img src="images/image-rules.svg" alt="rules-paper-beats-rock-beats-scissors-beats-paper">
+      </figure>
+    </div>
+    
+    <footer>
+
+        <button>rules</button>
+
+    </footer>
+  </main>
+
+
+  <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Luis Colina</a>.
+  </div>
+</body>
+</html>
